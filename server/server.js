@@ -90,8 +90,8 @@
             };
             let result = '';
             let context;
-
-            // NOTE: the OPTIONS method results in undefined result and also it never processes plugins - keep this in mind
+            //test
+            // NOTE: the OPTIOnS method results in undefined result and also it never processes plugins - keep this in mind
             if (method == 'OPTIONS') {
                 Object.assign(headers, {
                     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
