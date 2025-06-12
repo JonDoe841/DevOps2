@@ -32,7 +32,7 @@ jobs:
         run: npm install
 
       - name: Install Playwright and browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install 
 
       - name: Wait for Render app to be live
         run: |
