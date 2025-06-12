@@ -2,23 +2,20 @@
     "name": "online-book-library",
     "version": "1.0.0",
     "description": "Online Book Library Single Page Application",
-    "main": "index.html",
+    "main": "node index.html",
     "scripts": {
         "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-        "start-production": "http-server -a 0.0.0.0 -p $PORT -P http://0.0.0.0:3030 -c-1",
-        "server": "cd server && PORT=3030 node server.js && cd ../",
-        "production":"concurrently \" npm run server\" \"npm run start-production\"",
+        "server": "cd server && node server.js",
         "test": "playwright test"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "concurrently": "^9.1.2",
         "lit-html": "^1.3.0",
         "page": "^1.11.6"
     },
     "devDependencies": {
-        "@playwright/test": "1.44.1",
-        "http-server": "^14.1.1"
+        "http-server": "^14.1.1",
+        "@playwright/test": "1.44.1"
     }
 }
